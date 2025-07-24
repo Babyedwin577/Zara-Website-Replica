@@ -1,0 +1,150 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.main-header{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.font-styles{
+    color: rgb(0, 0, 0);
+    font-family: 'large';
+    font-weight: 300;
+    line-height: 16px;
+    letter-spacing: 0.8px;
+    font-size: 11px;
+    text-transform: uppercase;
+}
+.header-wrapper{
+    display: flex;
+    flex-direction: column;
+    padding-top: 12px;
+    padding-left: 20px;
+    padding-right: 12px;
+    padding-bottom: 17.4px;
+    gap: 18.4px;
+}
+.burger-navbar{
+    height: 0.75rem;
+    width: 1.5rem;
+    margin: 10px 0;
+    border: none;
+    display: flex;
+    background-color: #fff;
+    justify-content: flex-start;
+    flex-grow: 1;
+}
+.header-two{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    text-transform: uppercase;
+}
+.view{
+    display: flex;
+    padding-left:8px;
+    padding-right: 12px;
+    gap: 0.5rem;
+    list-style: none;
+}
+.links{
+    cursor: pointer;
+    padding: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header-logo{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+}
+.links-svg{
+    width: 20px;
+    height: 20px;
+}
+.scroll-menu{
+    margin-right: -16px;
+    margin-left: -20px;
+    max-height: 10.125rem;
+}
+.scroll-ul{
+    overflow-x: auto;
+    display: flex;
+    align-items: center;
+    scrollbar-width: none;
+    list-style: none;
+    white-space: nowrap;
+    flex-wrap: nowrap;
+}
+.special{
+    margin-left: 20px;
+    margin-right: 16px;
+    padding: 2.5px 0;
+}
+.margin-none{
+    margin-left: 0;
+}
+.contents{
+    display: flex;
+    padding: 0 20px;
+}
+.contents-wrapper{
+    display: flex;
+    flex-direction: column;
+}
+.card-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.25rem; 
+  padding: 0 1.25rem;
+  align-items: start;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    max-width: 100%;
+    overflow: hidden;
+}
+.card-inner{
+    display: flex;
+    aspect-ratio: 1/1;
+}
+.card-img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.item-info-wrapper{
+    margin-top: 0.5rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.item-info-inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.item-info-inner svg{
+    width: 16px;
+    height: 16px;
+}
+.overflow{text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    max-width: 90%;
+    display: inline;
+}
+.Rate-info{
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+}

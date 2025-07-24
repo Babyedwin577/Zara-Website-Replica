@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'medium';
+    src: url(./fonts/NeueHelveticaforZara-Medium-3QAMVW7N.8456b130.woff2);
+}
+@font-face {
+    font-family: 'large';
+    src: url(./fonts/NeueHelveticaforZara-Lt-2W5WYPEJ.c3fdc7d4.woff2);
+}
+@font-face {
+    font-family: 'roman';
+    src: url(./fonts/NeueHelveticaforZara-Roman-H6FBO4XD.2e3e13bd.woff2);
+}
