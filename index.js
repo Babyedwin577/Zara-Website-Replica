@@ -37,6 +37,53 @@ buttons.forEach((btn)=>{
     })
 })
 
+let scrollValue=0;
+const scroll=document.querySelector(".scroll-menu")
+window.addEventListener("scroll",()=>{
+   let scrolled=window.pageYOffset
+   console.log(scrolled)
+   if(scrolled>scrollValue){
+    scroll.style.transition="opacity 1.2s ease"
+    scroll.style.opacity="0"
+    scroll.classList.add("hide-scroll-menu")
+   }
+   else{
+    scroll.style.opacity="1"
+    scroll.classList.remove("hide-scroll-menu")
+   }
+   scrollValue=scrolled<= 0 ? 0 : scrolled
+})
 
+const view=document.querySelector(".view")
+const cardGrid=document.querySelector(".card-grid")
+const viewCount=document.querySelector('.haha')
+const info=document.querySelectorAll(".item-info-wrapper")
+ifclicked=false
+view.addEventListener('click',()=>{
+    console.log("clicked")
+    if(ifclicked){
+        cardGrid.style.gridTemplateColumns="repeat(2,1fr)"
+        viewCount.innerHTML=2
+        info.forEach((element)=>{
+            element.style.display="block"
+        })
+    }
+    else{
+        cardGrid.style.gridTemplateColumns="repeat(4,1fr)"
+        viewCount.innerHTML=4
+        info.forEach((element)=>{
+            element.style.display="none"
+        })
+    }
+    ifclicked= !ifclicked
+})
 
+const burger=document.querySelector(".burger-navbar")
+const burgerMenu=document.querySelector(".full-screen-menu")
+burger.addEventListener('click',()=>{
+    console.log("burger clicked")
+    burgerMenu.style.opacity="1"
+    burgerMenu.style.background="#fff"
+    burgerMenu.style.zIndex="9999"
+})
 

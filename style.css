@@ -7,6 +7,7 @@
     display: flex;
     align-items: center;
     width: 100%;
+    justify-content: space-between;
 }
 .font-styles{
     color: rgb(0, 0, 0);
@@ -32,9 +33,10 @@
     margin: 10px 0;
     border: none;
     display: flex;
+    cursor:pointer;
     background-color: #fff;
     justify-content: flex-start;
-    flex-grow: 1;
+
 }
 .header-two{
     display: flex;
@@ -148,4 +150,81 @@
     align-items: center;
     flex-grow: 1;
 }
+.hide-scroll-menu{
+    pointer-events: none;
+}
+.full-screen-menu{
+   width: 100%;
+   padding: 12px 12px 16px 20px;
+   position: absolute;
+   top: 0;
+   pointer-events: none;
+   opacity: 0;
+}
+.menu-header{
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu-section{
+    display: flex;
+    align-items: center;
+}
+.scroll-special{
+    margin-left:-20px;
+    margin-top: 24px;
+    margin-bottom: 32px;   
+}
+.line{
+   line-height: 32px;
+   font-size: 13px;
+}
+.pad{
+    padding: 0;
+}
+.twooo{
+    padding: 32px 0 0 0;
+}
+.ex-menu-ul{
+    display: flex;
+    flex-direction: column;
+    padding-right: 20px;
+    padding-bottom: 48px;
+    list-style: none;
+    
+}
+.menu-font{
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 32px;
+    font-family: 'large';
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+}
+.clo{
+    background-color: rgb(35, 244, 68);
+}
+.min{
+    height: 32px;
+}
+.letter{
+    letter-spacing: 5px;
+    font-weight: 500;
+    -webkit-font-smoothing:antialiased;
+    font-family: 'medium';
+}
+.letter-undo{
+    letter-spacing: 0.8px;
+}
+.flue{
+    display: flex;
+}
+.sport{
+    display: flex;
+    align-self: flex-start;
+    font-size: 7px;
+    margin-left: 2px;
+}
+
 

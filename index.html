@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header style="max-width: 100%; overflow:hidden;">
+    <header style="max-width: 100%; overflow:hidden; position:fixed; z-index: 9999;">
         <div class="header-wrapper">
           <div class="main-header">
            <button class="burger-navbar" type="button" aria-label="Open navigation menu">
@@ -18,7 +18,7 @@
            <ul class="header-two">
             <li class="view">
                <span class="font-styles">VIEW</span>
-               <span class="font-styles">2</span>
+               <span class="font-styles haha">2</span>
             </li>
             <li class="view">
                <span class="font-styles">filters</span>
@@ -35,7 +35,7 @@
             </li>
            </ul>
           </div>
-          <div class="scroll-menu">
+          <div class="scroll-menu scroll-menu-2">
             <ul class="scroll-ul">
                 <li class="special" data-filter="ALL"><span class="font-styles">view all</span></li>
                 <li class="special margin-none" data-filter="T-SHIRT" ><span class="font-styles">t-shirts</span></li>
@@ -51,7 +51,7 @@
           </div>
         </div>
     </header>
-    <main style="max-width: 100%;overflow: hidden;">
+    <main style="max-width: 100%;overflow: hidden; position: absolute; top: 103.8px;">
        <ul class="card-grid">
            <li class="card" data-id="SHOES">
               <div class="card-inner">
@@ -640,7 +640,65 @@
            </li>
        </ul> 
     </main>
+    <section class="full-screen-menu">
+       <div class="menu-header">
+        <svg width="24" height="13" viewBox="0 0 24 13" fill="none" xmlns="http://www.w3.org/2000/svg" class="layout-header-icon__icon"><path d="M6 7.062l5.438 5.438.562-.562L6.562 6.5 12 1.062 11.438.5 6 5.938.562.5 0 1.062 5.438 6.5 0 11.938l.562.562L6 7.062z" fill="currentColor"></path></svg>
+        <ul class="menu-section">
+            <li class="view">
+               <span class="font-styles">Log in</span>
+            </li>
+            <li class="header-logo">
+                <a class="links" href="https://www.zara.com/in/en/search/home">
+                    <svg class="links-svg" aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="inherit" stroke="inherit"><path fill-rule="evenodd" clip-rule="evenodd" d="M10.5 3.4a7 7 0 1 0 4.53 12.337l3.616 3.617.708-.708-3.61-3.61A7 7 0 0 0 10.5 3.4zm-6 7a6 6 0 1 1 12 0 6 6 0 0 1-12 0z"></path></svg>
+                </a>
+            </li>
+            <li class="header-logo">
+                <a class="links" href="https://www.zara.com/in/en/shop/cart">
+                    <svg class="links-svg" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="inherit" stroke="inherit"><path fill-rule="evenodd" clip-rule="evenodd" d="M9.708 5a2.5 2.5 0 0 1 4.584 0H9.708zM8.645 5a3.502 3.502 0 0 1 6.71 0H19v15H5V5h3.645zM6 6v13h12V6H6z"></path></svg>
+                </a>
+            </li>
+        </ul>
+       </div>
+       <ul class="scroll-ul scroll-special">
+                <li class="special pad" data-filter="ALL"><span class="font-styles line">Women</span></li>
+                <li class="special margin-none pad" data-filter="T-SHIRT" ><span class="font-styles line">Man</span></li>
+                <li class="special margin-none pad" data-filter="SHIRTS"><span class="font-styles line">Kids</span></li>
+                <li class="special margin-none pad" data-filter="POLO-SHIRTS"><span class="font-styles line">50th anniversary</span></li>
+                <li class="special margin-none pad" data-filter="TROUSERS"><span class="font-styles line">perfumes</span></li>
+                <li class="special margin-none pad" data-filter="JEANS"><span class="font-styles line">travel mode</span></li>
+       </ul>
+       <section class="twooo">
+              <ul class="ex-menu-ul">
+                <li class="menu-font">50th anniversary</li>
+                <li class="menu-font clo">sale</li>
+                <li class="menu-font min"></li>
+                <li class="menu-font letter">new collection</li>
+                <li class="menu-font" style="margin-top: 8px;">zara origins</li>
+                <li class="menu-font min"></li>
+                <li class="menu-font letter letter-undo">the new</li>
+                <li class="menu-font letter letter-undo">view all</li>
+                <li class="menu-font">summer essentials</li>
+                <li class="menu-font">linen</li>
+                <li class="menu-font">short</li>
+                <li class="menu-font">TROUSERS</li>
+                <li class="menu-font">SHIRTS</li>
+                <li class="menu-font">t-shirts</li>
+                <li class="menu-font min"></li>
+                <li class="menu-font letter letter-undo flue">
+                    <span>zara colllections</span>
+                    <span class="sport">sports</span>
+                </li>
+                <li class="menu-font">best sellers</li>
+                <li class="menu-font">best sellers</li>
+                <li class="menu-font">best sellers</li>
+                <li class="menu-font">best sellers</li>
+                <li class="menu-font">best sellers</li>
+                <li class="menu-font">best sellers</li>
+                <li class="menu-font">best sellers</li>
+
+              </ul>   
+       </section>
+    </section>
     <script src="index.js"></script>
 </body>
 </html>
-
