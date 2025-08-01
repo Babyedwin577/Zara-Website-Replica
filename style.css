@@ -160,6 +160,8 @@
    top: 0;
    pointer-events: none;
    opacity: 0;
+   max-height: 100vh;
+   overflow-y: auto;
 }
 .menu-header{
     margin-bottom: 20px;
@@ -226,5 +228,3 @@
     font-size: 7px;
     margin-left: 2px;
 }
-
-

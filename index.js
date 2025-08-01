@@ -80,10 +80,14 @@ view.addEventListener('click',()=>{
 
 const burger=document.querySelector(".burger-navbar")
 const burgerMenu=document.querySelector(".full-screen-menu")
+const mach=document.querySelector(".mach")
 burger.addEventListener('click',()=>{
     console.log("burger clicked")
     burgerMenu.style.opacity="1"
+    burgerMenu.style.transition="right 0.5s ease, opacity 0.5s ease"
     burgerMenu.style.background="#fff"
     burgerMenu.style.zIndex="9999"
+    mach.style.opacity="1"
+    mach.style.pointerEvents="none"
 })
 
